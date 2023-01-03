@@ -1,0 +1,516 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*navigation bar*/
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 2rem 8rem 4rem 8rem;
+}
+nav .logo2 a{
+    font-size: 2rem;
+    width: 20rem;
+    font-weight: 700;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+nav a{
+text-decoration: none;
+color: #ababab;
+}
+nav a span{
+    color:#00b39b;
+}
+nav .navelements ul{
+    list-style: none;
+}
+nav .navelements ul li{
+    display: inline;
+    margin:1rem;
+}
+/*navigation bar hover*/
+nav .navelements ul li a:hover{
+    color: #00b39b;
+}
+/*menu caché*/
+#drop-menu{
+    position: absolute;
+    background-color: #fff;
+    right: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    box-shadow: 0 1px 1px 1px #abababa4;
+    visibility: hidden;
+}
+#drop-menu a {
+    
+    padding: 1rem;
+}
+
+/* make the hidden menu visible when the mouse is over "departement" */
+
+#drop:hover #drop-menu{
+    visibility: visible;
+}
+/*when the mouse is over the links of the hidden menu*/
+
+#drop-menu a:hover{
+    background-color:#e5faf8;
+}
+/*Menu for mobile and tablet*/
+.mobile-menu{
+    
+    display: none;
+    
+}
+
+h1,h2,h3,h4{
+    color:#00b39b; 
+    font-family: 'Work Sans', sans-serif;
+    font-weight:400;
+    line-height: 2rem;
+}
+p{  line-height: 1.7rem;
+    margin: 1rem;
+    color:#747474;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #ababab;
+    font-size: 15px;
+    
+}
+::selection{
+    
+    background-color:#00b39b;
+    color:#e5faf8;
+}
+/*Section*/
+.Content1 {
+margin: 0 8rem;
+}
+
+ .Part1 {
+height: 23rem;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+}
+.Part1 h3{
+    color: #00b39b;
+    font-size: 2rem;   
+}
+
+.text1{
+    display:flex;
+}
+
+/*cards*/
+.Part2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.card{
+    height: 23rem;
+    width: 30%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    border-radius: 1rem;
+    color:#00b39b;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.card:hover {
+    opacity:0.7;
+}
+
+.card1,.card1 select{
+background-color:#00b39b;
+font-size: 1.3rem;
+margin-bottom: 1rem; 
+}
+.card2,.card2 select{
+    background-color:#3d83df;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.card3,.card3 select{
+  background-color:#1b2734;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.card-text,.card-choices{
+    margin-left: 2rem;
+    width: 85%;
+    font-size: 1.3rem;
+}
+.card-text img, .card-text h2,.card-text h3,.card-text h4{
+    margin-bottom: 8px;
+    color: #fff;
+}
+.card-choices option{
+    font-size: 1rem;
+    color:#1b2734; ;
+    background-color: #fff ;
+}
+select{
+    border: transparent;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Partner Logo*/
+.Part3{
+    display: flex;
+    justify-content: space-between;
+
+}
+.Part3-text{
+    width: 30%;
+    margin: 3rem 0 0 1rem;
+    color:#00b39b;
+}
+
+.Logo-links{
+    margin:3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height:6rem;
+}
+
+.Part3-logo svg, .Part3-links a{
+margin-left: 4rem;
+cursor:pointer;
+text-decoration: none;
+}
+
+.Part3-logo path{
+    fill: hsla(0,0%,67%,.7);
+    transition: .2s;
+}
+.Part3-links img{
+    filter:invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%) contrast(0);
+    opacity: .6;
+    transition:.2s;
+}
+
+.Part3-links img:hover{
+    opacity:1;
+    filter:unset;
+}
+
+.Part3-logo svg:hover path{
+    fill:#00b39b;
+}
+
+/*Doka content2*/
+
+.Content2{
+    background-color:#e5faf8;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    height:40rem;
+    position: relative;
+}
+
+/*Logo fl background*/
+.Content2::before{
+    content:'';
+    width: 450px;
+    height:320px;
+    background-image:url(logo2.svg) ;
+    position: absolute;
+    bottom: 0;
+    left:3%;
+}
+/*the text in the left*/
+.Content2-1{
+    text-align: center;
+    margin:3rem 0 0 10rem;
+    width:30%;
+    z-index:10;
+}
+.Content2-1 h2{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    line-height: 3rem;
+}
+
+/*cards in the right*/
+
+/*the container of the cards*/
+.Content2-2{
+    display: flex;
+    width: 50%;
+    align-items: baseline;
+
+}
+
+/*the card*/
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:17rem;
+    height:17.5rem;
+    background-color: #fff;
+    border-radius: .4rem;
+    margin: 1rem;
+    text-align: center;
+    color:#747474;
+    white-space: pre-line;
+} 
+.item p{
+    line-height:1.2rem;
+}
+
+/*the icons in the cards*/
+.Content2-2 img{
+    margin-left: 50%;
+    transform: translate(-50%);
+    width:2.5rem;
+}
+
+.item h3{
+    margin:1rem;
+}
+.Content2-2-a,.Content2-2-b{
+    z-index: 100;
+}
+
+/*The last content*/
+.Content3{
+    margin: 2rem 8rem 4rem 8rem;
+}
+
+.Content3-text{
+    text-align: center;
+    margin: 5rem auto;
+    width:70%;
+}
+
+.Content3-text h2{
+    font-size:2rem;
+}
+.Country-grid{
+display:flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.country{
+    width: 309px;
+    height: 349px;
+    margin:.7rem;
+    box-shadow: 0 1px 1px 1px #ababab23 ;
+    cursor: pointer;
+    
+}
+.country img {
+    height: 278px;
+}
+.country-name{
+     display: flex;
+    justify-content: space-between; 
+    margin: 20px; 
+    color:#747474 ;
+    align-items: center;
+}
+
+.country:hover{
+    box-shadow: 0px 8px 8px 8px #ababab57;
+}
+.btn{
+    background-color: #3d83df;
+    color:#fff;
+    border: transparent;
+    padding: .7rem;
+    border-radius: .4rem;
+    opacity: .8;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.join{
+    margin:6rem auto;
+    text-align: center;
+    
+}
+.join h2{
+    color:var(--bgcolor1);
+    margin-bottom: 2rem;
+}
+
+footer a, footer p{
+
+    font-size: .7rem;
+    text-decoration: none;
+    text-align: center;
+    white-space: pre-line;
+    line-height: 1rem;
+
+}
+hr{
+    opacity: .2;
+
+}
+
+/****Responsive design***/
+@media screen and (max-width:1000px){
+    /***Removing margins in small laptop screen and lower***/
+    .Content1{
+        margin:1rem;
+    }
+    nav{
+        margin:0;
+    }
+    .Country-grid{
+        flex-wrap:nowrap;
+        overflow-x: auto;
+    }
+
+}
+@media screen and (max-width:748px){
+    .Content3{
+        flex-direction: column;
+    }
+    .Content3-text{
+        align-self: center;
+        width: 50%;
+    }
+    .Logo-links{
+        align-self: center;
+        width: 90%;
+    }
+    .Content3{
+        margin:2rem;
+    }
+    .Content3-text{
+        width:80%;
+    }
+}
+
+/***design in small tablet and smartphone**/
+@media screen and (max-width:622px){
+    header{
+        margin:2rem 0;
+    }
+    /**Nav list**/
+    nav .logo2{
+    align-self: center;
+    }
+    nav .navelements{
+    display:none;
+    }
+    .mobile-menu{
+        display:block;
+    }
+    /**First content**/
+    .Part1{
+        margin:1rem 0;
+    }
+    .Part1 h3{
+        width:80%;
+    }
+    .Part1 img{
+        visibility: hidden;
+    }
+    .text1{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    /**The cards**/
+    
+
+    .Part2{
+        display: block;
+        margin-top: 3rem ;
+    }
+    .card{
+        width: 100%;
+        
+    }
+
+    .Content2{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin: 1rem;
+    }
+    .Content2-1{
+        width:auto;
+        text-align: center;
+        margin: auto auto;
+        
+    }
+    .Content2-2{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .Content2-2-a , .Content2-2-b{
+        
+        width: 100%;
+       
+        
+
+    }
+    
+    .item{
+        width: 90%;
+        margin: .4rem auto;    
+        
+    }
+
+
+}
+@media screen and (min-width:622px)and(max-width:900px){
+.Content2{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin:1rem;
+}
+.Content2-1{
+    width:auto;
+    text-align: center;
+    margin: auto auto;
+}
+.Content2-2{
+    width:100%;
+    justify-content: center;
+}
+.Content2-2-a, .Content2-2-b{
+    width:45%;
+}
+.Content2::before{
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.item h3{
+    margin: .5rem;
+}
+}
